@@ -1,0 +1,39 @@
+.sidebar {
+    width: 18%;
+    min-width: 200px; /* Change from 100vh to avoid excessive width */
+    max-width: 250px; /* Ensures sidebar is not too wide */
+    border: 1.5px solid #a9a9a9;
+    border-top: 0;
+    height: 100vh; /* Ensures it spans full height */
+    font-family: max(1vw, 10px); /* Adjust font size */
+}
+
+.sidebar-options {
+    padding-top: 20px;
+    padding-left: 10%; /* Adjust to align properly */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduce gap if needed */
+}
+
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #a9a9a9;
+    border-right: 0;
+    padding: 8px 10px;
+    border-radius: 3px 0px 0px 3px;
+    cursor: pointer;
+    background: white; /* Ensure background is white */
+}
+.sidebar-option.active{
+    background-color: #efffed;
+    border-color: green;
+}
+@media(max-width:900px){
+    .sidebar-options{
+       display: none;
+    }
+}
+
